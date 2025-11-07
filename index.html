@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博朋克飞机大战</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+        }
+        #gameCanvas {
+            background-color: #000;
+            display: block;
+        }
+        .game-ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #0f0;
+            font-size: 20px;
+            text-shadow: 0 0 5px #0f0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="game-ui">
+        <div>得分: <span id="score">0</span></div>
+        <div>生命: <span id="lives">3</span></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
